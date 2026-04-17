@@ -29,9 +29,9 @@ operational cycle thresholds.
 
 Install dependencies with:
 
-` `` `
+```
 pip install pandas numpy
-` `` `
+```
 
 ## Usage
 1. Download the C-MAPSS dataset from the NASA Ames Prognostics Data Repository
