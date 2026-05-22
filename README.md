@@ -1,5 +1,4 @@
 # NASA CMAPSS - Turbofan Engine RUL Prediction
-
 Predicting Remaining Useful Life (RUL) of aircraft engines using the NASA CMAPSS FD001 dataset.
 
 ## Overview
@@ -37,6 +36,9 @@ NASA Commercial Modular Aero-Propulsion System Simulation (CMAPSS) - FD001
 
 ## Tools Used
 Python, Pandas, NumPy, Scikit-learn, XGBoost, PyTorch, Matplotlib
+
+## Live Demo
+ [Try the RUL Predictor](https://nasarulpredict.streamlit.app/)
 
 ## Author
 Grisham Darooka, M.Tech Aerospace Engineering, IIT Bombay
