@@ -14,15 +14,16 @@ NASA Commercial Modular Aero-Propulsion System Simulation (CMAPSS) - FD001
 
 | Model | RMSE |
 |-------|------|
-| Random Forest (baseline) | 41.38 |
-| XGBoost (baseline) | 43.37 |
-| Random Forest (tuned, 200 trees, depth 10) | 41.09 |
-| Random Forest (capped RUL at 125)  | **18.59** |
-| XGBoost (capped RUL at 125) | 19.89 |
-| LSTM (PyTorch, 2 layers, hidden 128) | 41.89 |
+| Random Forest (baseline) | 42.21 |
+| XGBoost (baseline) | 44.31 |
+| Random Forest (tuned, 200 trees, depth 10) | 42.01 |
+| XGBoost (tuned) | 44.45 |
+| Random Forest (capped RUL at 125)  | **16.72** |
+| XGBoost (capped RUL at 125) | 18.63 |
+| LSTM (2 layers, hidden 64) | 42.11 |
 
 ## Key Findings
-- Capping RUL at 125 cycles reduced RMSE by 55% — early life engine behaviour is similar across engines making high RUL values noisy targets
+- Capping RUL at 125 cycles reduced RMSE by 60% — early life engine behaviour is similar across engines, making high RUL values noisy targets
 - Sensor 11 (bypass ratio) is the most important predictor at ~40% importance in both RF and XGBoost
 - Removing 7 low-importance sensors (1, 5, 6, 10, 16, 18, 19) had negligible effect on accuracy
 - Random Forest outperformed LSTM on FD001 — consistent with research findings that simpler single-condition datasets don't always benefit from sequential models
